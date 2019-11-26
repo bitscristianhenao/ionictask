@@ -1,0 +1,21 @@
+<ion-content>
+  <a class="back" href="/home"> < Back </a>
+  <div class="bgbb"></div>
+  <div class="container">
+    <div class="title">
+      <div class="element">
+        <h2>De</h2>
+      </div>
+      <h3>aths</h3>
+    </div>
+    <div class="list">
+      <a class="box" *ngFor="let de of deaths">
+        <h4>{{de.death}}</h4>
+        <h5>Responsible: {{ de.responsible }}</h5>
+        <h5>Cause: {{ de.cause }}</h5>
+        <h5>Last Words: {{ de.last_words }}</h5>
+        <h5>Episode: {{ de.episode }}</h5>
+      </a>
+    </div>
+  </div>
+</ion-content>

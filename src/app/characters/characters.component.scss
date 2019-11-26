@@ -1,0 +1,110 @@
+ion-content {
+    position: relative;
+
+    a.back {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        padding: 5px;
+        background-color: transparent;
+        color: yellowgreen;
+        font-size: 15px;
+        z-index: 1;
+        text-decoration: none;
+
+        &:hover {
+            padding: 5px;
+            border-radius: 3px;
+            background-color: rgba(153, 205, 50, 0.678);
+        }
+    }
+
+    .bgbb {
+        background-image: url(../../assets/bb2.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 820px;
+        filter: brightness(0.5);
+        position: absolute;
+    }
+    .container {        
+        position: absolute;
+        width: 100%;
+        .title {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+            width: 300px;
+            height: 90px;
+            margin-top: 80px;
+            margin-left: 30px;
+            animation-duration: 3s;
+            animation-name: logoam;
+            div.element {
+                background-color: rgb(4, 93, 4);
+                border: 1px solid white;
+                h2 {
+                    font-weight: bold;
+                    color: white;
+                    font-size: 50px;
+                    margin: 10px;
+                }
+            }
+    
+            h3 {
+                font-weight: 200;
+                color: white;
+                font-size: 35px;
+                margin: 10px;
+            }
+        }
+        .list {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: start;
+            align-items: flex-start;
+            margin: 20px 20px 5px 20px;
+            animation-duration: 3s;
+            animation-name: logoam;
+            width: auto;
+            height: 560px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            a.box {
+                width: 100%;
+                height: 500px;
+                border-radius: 50px;
+                margin: 0 10px 0 0;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                text-decoration: none;
+
+                h4 {
+                    display: block;
+                    width: 335px;
+                    color: white;
+                    text-align: center;
+                    margin-top: 499px;
+                    font-size: 50px;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes logoam {
+from {
+    opacity: 0;
+}
+
+to {
+    opacity: 1;
+}
+}

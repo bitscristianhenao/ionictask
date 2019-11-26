@@ -1,5 +1,7 @@
 {
   "name": "harrypotter",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

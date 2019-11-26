@@ -1,0 +1,18 @@
+<ion-content>
+  <a class="back" href="/home"> < Back </a>
+  <div class="bgbb"></div>
+  <div class="container">
+    <div class="title">
+      <div class="element">
+        <h2>Qu</h2>
+      </div>
+      <h3>otes</h3>
+    </div>
+    <div class="list">
+      <a class="box" *ngFor="let qu of quotes">
+        <h4>"{{qu.quote}}"</h4>
+        <h5>Autor: {{ qu.author }}</h5>
+      </a>
+    </div>
+  </div>
+</ion-content>
